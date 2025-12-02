@@ -55,7 +55,7 @@ class _AnimeSearchViewState extends State<AnimeSearchView> implements AnimeViewC
     final isWide = MediaQuery.of(context).size.width > 800;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Anime Explorer'),
+        title: Text('Anime Overhaul'),
         centerTitle: true,
         elevation: 0,
         actions: [
@@ -63,7 +63,7 @@ class _AnimeSearchViewState extends State<AnimeSearchView> implements AnimeViewC
             icon: Icon(Icons.info_outline),
             onPressed: () => showAboutDialog(
               context: context,
-              applicationName: 'Anime Explorer',
+              applicationName: 'Anime Overhaul',
               applicationVersion: '1.0',
               children: [Text('Search anime using the Jikan (MyAnimeList) API. Clean MVP structure.')],
             ),
